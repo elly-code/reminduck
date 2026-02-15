@@ -14,6 +14,11 @@
       <summary>The saved height of the window.</summary>
       <description>The saved height of the window.</description>
     </key>
+    <key name="window-maximized" type="b">
+      <default>false</default>
+      <summary>Open window maximized.</summary>
+      <description>Whether the main window of the application should open maximized or not</description>
+    </key>
     <key name="first-run" type="b">
       <default>true</default>
       <summary>Whether this is the first time that Reminduck has opened</summary>

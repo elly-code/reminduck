@@ -31,10 +31,9 @@ public class Reminduck.MainWindow : Gtk.ApplicationWindow {
         Intl.setlocale ();
         settings = new GLib.Settings ("io.github.ellie_commons.reminduck.state");
 
-        set_default_size (
-            this.settings.get_int ("window-width"),
-            this.settings.get_int ("window-height")
-        );
+        default_height = settings.get_int ("window-height");
+        default_width = settings.get_int ("window-width");
+        maximized = settings.get_boolean ("window-maximized");
 
         // Use reminduck styling
         var app_provider = new Gtk.CssProvider ();
@@ -215,12 +214,10 @@ public class Reminduck.MainWindow : Gtk.ApplicationWindow {
 
     private bool before_destroy () {
         int width, height;
-
         get_default_size (out width, out height);
-
-        this.settings.set_int ("window-width", width);
-        this.settings.set_int ("window-height", height);
-
+        settings.set_int ("window-height", height);
+        settings.set_int ("window-width", width);
+        settings.set_boolean ("window-maximized", maximized);
         hide ();
         return true;
     }
