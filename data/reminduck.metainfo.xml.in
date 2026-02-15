@@ -15,6 +15,13 @@
   </description>
 
   <launchable type="desktop-id">io.github.elly_code.reminduck.desktop</launchable>
+  <provides>
+      <id>io.github.ellie_commons.reminduck</id>
+      <binary>io.github.ellie_commons.reminduck</binary>
+  </provides>
+  <replaces>
+      <id>io.github.ellie_commons.reminduck</id>
+  </replaces>
 
   <releases>
     <release version="2.3.1" date="2026-01-13">
