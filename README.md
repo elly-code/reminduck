@@ -12,15 +12,15 @@ It's perfect if all you want are simple or daily/weekly/monthly reminders. Anyth
 _And it quacks._
 
   <a href="https://elementary.io">
-    <img src="https://elly-code.github.io/community-badge.svg" alt="Made for elementary OS">
+    <img src="https://ellie-commons.github.io/community-badge.svg" alt="Made for elementary OS">
   </a>
 
 ## Installation
 
 You can download and install Reminduck from various sources:
 
-[![Get it on AppCenter](https://appcenter.elementary.io/badge.svg?new)](https://appcenter.elementary.io/io.github.elly_code.reminduck) 
-[<img src="https://flathub.org/assets/badges/flathub-badge-en.svg" width="160" alt="Download on Flathub">](https://flathub.org/apps/io.github.elly_code.reminduck)
+[![Get it on AppCenter](https://appcenter.elementary.io/badge.svg?new)](https://appcenter.elementary.io/io.github.ellie_commons.reminduck) 
+[<img src="https://flathub.org/assets/badges/flathub-badge-en.svg" width="160" alt="Download on Flathub">](https://flathub.org/apps/io.github.ellie_commons.reminduck)
 
 
 ## 🛣️ Roadmap
@@ -43,13 +43,13 @@ You can donate to various contributors:
 On elementary OS or with its appcenter remote installed
 
 ```bash
-flatpak-builder --force-clean --user --install-deps-from=appcenter --install builddir ./io.github.elly_code.reminduck.yml
+flatpak-builder --force-clean --user --install-deps-from=appcenter --install builddir ./io.github.ellie_commons.reminduck.yml
 ```
 
 On other systems
 
 ```bash
-flatpak run org.flatpak.Builder --force-clean --sandbox --user --install --install-deps-from=flathub --ccache --mirror-screenshots-url=https://dl.flathub.org/media/ --repo=repo builddir io.github.elly_code.reminduck.flathub.yml
+flatpak run org.flatpak.Builder --force-clean --sandbox --user --install --install-deps-from=flathub --ccache --mirror-screenshots-url=https://dl.flathub.org/media/ --repo=repo builddir io.github.ellie_commons.reminduck.flathub.yml
 ```
 
 ## ACKNOWLEDGMENTS

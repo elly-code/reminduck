@@ -10,7 +10,7 @@ msgstr ""
 "PO-Revision-Date: 2025-12-14 16:23+0700\n"
 "POT-Creation-Date: 2025-12-26 20:56+0100\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"Project-Id-Version: io.github.elly_code.reminduck\n"
+"Project-Id-Version: io.github.ellie_commons.reminduck\n"
 "Report-Msgid-Bugs-To: \n"
 "X-Generator: Poedit 3.8\n"
 

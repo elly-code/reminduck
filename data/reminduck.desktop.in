@@ -3,8 +3,8 @@ Name=Reminduck
 GenericName=Reminders
 Comment=Don't forget about your stuff in an adorably annoying way
 Categories=Office;
-Exec=io.github.elly_code.reminduck %U
-Icon=io.github.elly_code.reminduck
+Exec=io.github.ellie_commons.reminduck %U
+Icon=io.github.ellie_commons.reminduck
 SingleMainWindow=true
 
 Terminal=false
@@ -17,4 +17,4 @@ Actions=NewReminder;
 [Desktop Action NewReminder]
 Name=New reminder
 Icon=list-add
-Exec=io.github.elly_code.reminduck --new-reminder
+Exec=io.github.ellie_commons.reminduck --new-reminder

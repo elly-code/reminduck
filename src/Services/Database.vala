@@ -51,7 +51,7 @@ public class Reminduck.Database {
         }
 
         // If the old database is still there, move it
-        string old_path = Environment.get_user_data_dir () + "/.local/share/io.github.elly_code.reminduck/database.db";
+        string old_path = Environment.get_user_data_dir () + "/.local/share/io.github.ellie_commons.reminduck/database.db";
         File checkpath = File.new_for_path (old_path);
         File new_path = File.new_for_path (get_database_path ());
         

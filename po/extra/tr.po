@@ -274,5 +274,5 @@ msgstr "Mevcut hatırlatıcıları görün ancak karanlıkta"
 #~ msgstr "İlk Sürüm 🎉️"
 
 # Uygulama kimliği, çevirmeyin
-#~ msgid "io.github.elly_code.reminduck"
-#~ msgstr "io.github.elly_code.reminduck"
+#~ msgid "io.github.ellie_commons.reminduck"
+#~ msgstr "io.github.ellie_commons.reminduck"

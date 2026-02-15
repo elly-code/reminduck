@@ -1,4 +1,4 @@
-project('io.github.elly_code.reminduck', 
+project('io.github.ellie_commons.reminduck', 
 'vala', 'c', 
 version: '2.3.1')
 

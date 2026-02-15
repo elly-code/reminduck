@@ -29,7 +29,7 @@ public class Reminduck.MainWindow : Gtk.ApplicationWindow {
 
     construct {
         Intl.setlocale ();
-        settings = new GLib.Settings ("io.github.elly_code.reminduck.state");
+        settings = new GLib.Settings ("io.github.ellie_commons.reminduck.state");
 
         set_default_size (
             this.settings.get_int ("window-width"),
@@ -38,7 +38,7 @@ public class Reminduck.MainWindow : Gtk.ApplicationWindow {
 
         // Use reminduck styling
         var app_provider = new Gtk.CssProvider ();
-        app_provider.load_from_resource ("/io/github/elly_code/reminduck/Application.css");
+        app_provider.load_from_resource ("/io/github/ellie_commons/reminduck/Application.css");
 
         Gtk.StyleContext.add_provider_for_display (
             Gdk.Display.get_default (),

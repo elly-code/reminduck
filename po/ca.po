@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the io.github.elly_code.reminduck package.
+# This file is distributed under the same license as the io.github.ellie_commons.reminduck package.
 # ONDO ALVELLË, 2021.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: io.github.elly_code.reminduck\n"
+"Project-Id-Version: io.github.ellie_commons.reminduck\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-26 20:56+0100\n"
 "PO-Revision-Date: 2021-11-17 17:14+0100\n"

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright 2018 Matheus Fantinel <matfantinel@gmail.com> -->
 <component type="desktop-application">
-  <id>io.github.elly_code.reminduck</id>
+  <id>io.github.ellie_commons.reminduck</id>
   <metadata_license>CC0</metadata_license>
   <project_license>GPL-3.0+</project_license>
   <name>Reminduck</name>
@@ -14,7 +14,7 @@
     <p>And it quacks.</p>
   </description>
 
-  <launchable type="desktop-id">io.github.elly_code.reminduck.desktop</launchable>
+  <launchable type="desktop-id">io.github.ellie_commons.reminduck.desktop</launchable>
 
   <releases>
     <release version="2.3.1" date="2026-01-13">
@@ -89,7 +89,7 @@
     </release>
   </releases>
     <content_rating type="oars-1.1"/>
-    <translation type="gettext" source_locale="en_GB">io.github.elly_code.reminduck</translation>
+    <translation type="gettext" source_locale="en_GB">io.github.ellie_commons.reminduck</translation>
     <recommends>
       <control>keyboard</control>
       <control>pointing</control>

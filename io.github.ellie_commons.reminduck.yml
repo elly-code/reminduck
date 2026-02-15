@@ -1,8 +1,8 @@
-id: io.github.elly_code.reminduck
+id: io.github.ellie_commons.reminduck
 runtime: io.elementary.Platform
 runtime-version: '8.2'
 sdk: io.elementary.Sdk
-command: io.github.elly_code.reminduck
+command: io.github.ellie_commons.reminduck
 
 finish-args:
   - '--share=ipc'
