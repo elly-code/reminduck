@@ -2,13 +2,14 @@ name: CI
 
 on:
   pull_request:
-    branches: [ main ]
+    branches:
+      - main
+    branches-ignore:
+      - legacy-rdnn
     types:
       - opened
       - reopened
       - synchronize
-    branches-ignore:
-      - 'legacy-rdnn'
 
 jobs:
   flatpak:
