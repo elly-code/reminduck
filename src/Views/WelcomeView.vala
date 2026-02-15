@@ -25,7 +25,7 @@ public class Reminduck.Views.WelcomeView : Gtk.Box {
         add_css_class ("reminduck-welcome-box");
 
         var image = new Gtk.Image () {
-            icon_name = "io.github.elly_code.reminduck",
+            icon_name = "io.github.ellie_commons.reminduck",
             pixel_size = 96,
             valign = Gtk.Align.FILL
         };

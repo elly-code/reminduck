@@ -19,10 +19,10 @@ build_dir="builddir"
 theme_name="io.elementary.stylesheet.banana"
 icon_theme="elementary"
 version="$(cat meson.build | grep version | cut -d \' -f 2)"
-publisher="elly-code"
+publisher="ellie-commons"
 
 deploy_dir="windows/deploy"
-exe_name="io.github.elly_code.jorts.exe"
+exe_name="io.github.ellie_commons.jorts.exe"
 
 #--------------------------------
 # Rebuild and compile the exe as a release build
@@ -117,8 +117,8 @@ Name ${app_name}
 VIAddVersionKey /LANG=0 "ProductName" "${app_name}"
 VIAddVersionKey /LANG=0 "FileVersion" "${version}"
 VIAddVersionKey /LANG=0 "ProductVersion" "${version}"
-VIAddVersionKey /LANG=0 "FileDescription" "https://github.com/elly-code/reminduck"
-VIAddVersionKey /LANG=0 "LegalCopyright" "GNU GPL v3 elly-code"
+VIAddVersionKey /LANG=0 "FileDescription" "https://github.com/ellie-commons/reminduck"
+VIAddVersionKey /LANG=0 "LegalCopyright" "GNU GPL v3 ellie-commons"
 VIProductVersion "${version}.0"
 
 Outfile "${app_name}-Installer.exe"
@@ -139,8 +139,8 @@ BrandingText "Jorts ${version}, ${publisher} 2025"
 !define MUI_UNICON "icons\uninstall.ico"
 
 !define MUI_FINISHPAGE_LINK "Source code and wiki"
-!define MUI_FINISHPAGE_LINK_LOCATION "https://github.com/elly-code/reminduck"
-!define MUI_FINISHPAGE_RUN "\$INSTDIR\bin\io.github.elly_code.reminduck.exe"
+!define MUI_FINISHPAGE_LINK_LOCATION "https://github.com/ellie-commons/reminduck"
+!define MUI_FINISHPAGE_RUN "\$INSTDIR\bin\io.github.ellie_commons.reminduck.exe"
 
 !insertmacro MUI_PAGE_WELCOME
 !insertmacro MUI_PAGE_DIRECTORY
@@ -230,7 +230,7 @@ Section "Install"
     WriteRegStr HKCU "Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\${app_name}" "InstallLocation" "\$INSTDIR\\"
     WriteRegStr HKCU "Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\${app_name}" "UninstallString" "\$INSTDIR\\Uninstall.exe"
     WriteRegStr HKCU "Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\${app_name}" "Publisher" "${publisher}"
-    WriteRegStr HKCU "Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\${app_name}" "URLInfoAbout" "https://github.com/elly-code/reminduck"
+    WriteRegStr HKCU "Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\${app_name}" "URLInfoAbout" "https://github.com/ellie-commons/reminduck"
     WriteRegDWORD HKCU "Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\${app_name}" "EstimatedSize" "0x00028294" ;164,5 MB
 SectionEnd
 

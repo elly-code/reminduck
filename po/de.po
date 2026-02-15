@@ -9,7 +9,7 @@ msgstr ""
 "PO-Revision-Date: 2020-01-13 15:11+0100\n"
 "POT-Creation-Date: 2025-12-26 21:16+0100\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Project-Id-Version: io.github.elly_code.reminduck\n"
+"Project-Id-Version: io.github.ellie_commons.reminduck\n"
 "Report-Msgid-Bugs-To: \n"
 
 #. If reminder date < current date

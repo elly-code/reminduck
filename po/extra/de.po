@@ -262,5 +262,5 @@ msgstr "Aktuelle Mahnungen sehen, aber im Dunkeln"
 #~ msgid "Initial Release 🦆"
 #~ msgstr "Erste Veröffentlichung 🦆"
 
-#~ msgid "io.github.elly_code.reminduck"
-#~ msgstr "io.github.elly_code.reminduck"
+#~ msgid "io.github.ellie_commons.reminduck"
+#~ msgstr "io.github.ellie_commons.reminduck"
