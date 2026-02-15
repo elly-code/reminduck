@@ -7,6 +7,8 @@ on:
       - opened
       - reopened
       - synchronize
+    branches-ignore:
+      - 'legacy-rdnn'
 
 jobs:
   flatpak:
