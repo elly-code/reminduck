@@ -1,7 +1,10 @@
 id: io.github.ellie_commons.reminduck
-runtime: io.elementary.Platform
-runtime-version: '8.2'
-sdk: io.elementary.Sdk
+# elementary SDK is not available on Flathub, so use the elementary BaseApp instead
+base: io.elementary.BaseApp
+base-version: 'circe-25.08'
+runtime: org.gnome.Platform
+runtime-version: '49'
+sdk: org.gnome.Sdk
 command: io.github.ellie_commons.reminduck
 
 finish-args:
@@ -28,5 +31,9 @@ modules:
   - name: reminduck
     buildsystem: meson
     sources:
-    - type: dir
-      path: "."
+      - type: git
+        url: https://github.com/ellie-commons/reminduck.git
+        commit: 4db84251e9908838be4924f9b1bb85049e8e653f
+        x-checker-data:
+          type: git
+          tag-pattern: '^([\d.]+)$'
