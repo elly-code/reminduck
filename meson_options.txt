@@ -1,0 +1,3 @@
+option('development', type: 'boolean', value: false, description: 'If this is a development build')
+option('legacy-rdnn', type: 'boolean', value: false, description: 'If this uses the legacy RDNN')
+option('windows_build', type: 'boolean', value: false, description: 'If this is a windows build. Switched on automatically on windows machines')

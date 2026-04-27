@@ -22,7 +22,7 @@ version="$(cat meson.build | grep version | cut -d \' -f 2)"
 publisher="elly-code"
 
 deploy_dir="windows/deploy"
-exe_name="io.github.elly_code.jorts.exe"
+exe_name="io.github.elly_code.reminduck.exe"
 
 #--------------------------------
 # Rebuild and compile the exe as a release build
@@ -129,7 +129,7 @@ RequestExecutionLevel user
 
 # Set the title of the installer window
 Caption "${app_name} Installer"
-BrandingText "Jorts ${version}, ${publisher} 2025"
+BrandingText "Reminduck ${version}, ${publisher} 2025"
 
 # Set the title and text on the welcome page
 !define MUI_WELCOMEPAGE_TITLE "Welcome to ${app_name} setup"

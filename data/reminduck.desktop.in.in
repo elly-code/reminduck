@@ -1,20 +1,23 @@
 [Desktop Entry]
+Version=1.5
+Type=Application
+
 Name=Reminduck
 GenericName=Reminders
 Comment=Don't forget about your stuff in an adorably annoying way
 Categories=Office;
-Exec=io.github.elly_code.reminduck %U
-Icon=io.github.elly_code.reminduck
-SingleMainWindow=true
+Exec=@APP_ID@ %U
+Icon=@APP_ID@
 
 Terminal=false
-Type=Application
-X-GNOME-Gettext-Domain=reminduck
+X-GNOME-Gettext-Domain=@APP_NAME@
 X-GNOME-UsesNotifications=true
 Keywords=Reminduck;Personal;Assistant;Reminders;Remember;Duck;Quack;Cute;
 Actions=NewReminder;
+StartupNotify=true
+SingleMainWindow=true
 
 [Desktop Action NewReminder]
 Name=New reminder
 Icon=list-add
-Exec=io.github.elly_code.reminduck --new-reminder
+Exec=@APP_ID@ --new-reminder

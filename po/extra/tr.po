@@ -1,208 +1,240 @@
 msgid ""
 msgstr ""
-"Content-Transfer-Encoding: 8bit\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Language: tr\n"
-"Language-Team: Türkçe <gnome-turk@gnome.org>\n"
-"Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
-"MIME-Version: 1.0\n"
-"PO-Revision-Date: 2019-11-04 14:49+0100\n"
-"POT-Creation-Date: 2025-12-20 22:57+0100\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-27 15:24+0200\n"
+"PO-Revision-Date: 2019-11-04 14:49+0100\n"
+"Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
+"Language-Team: Türkçe <gnome-turk@gnome.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: data/reminduck.desktop.in:3
-#: data/reminduck.metainfo.xml.in:7
+#: data/reminduck.desktop.in.in:3 data/reminduck.metainfo.xml.in.in:7
 msgid "Reminduck"
 msgstr "Reminduck"
 
-#: data/reminduck.desktop.in:4
-#: data/reminduck.metainfo.xml.in:108
+#: data/reminduck.desktop.in.in:4 data/reminduck.metainfo.xml.in.in:124
 msgid "Reminders"
 msgstr "Hatırlatıcılar"
 
 # Serbest çeviri yapıldı
-#: data/reminduck.desktop.in:5
+#: data/reminduck.desktop.in.in:5
 msgid "Don't forget about your stuff in an adorably annoying way"
 msgstr "Önemli işlerinizi sevimli ve sinir bozucu bir şekilde size hatırlatır"
 
-#: data/reminduck.desktop.in:15
+#: data/reminduck.desktop.in.in:15
 #, fuzzy
 msgid "Reminduck;Personal;Assistant;Reminders;Remember;Duck;Quack;Cute;"
 msgstr "Reminduck;Kişisel;Asistan;Yardımcı;Hatırlatıcı;Hatırlatıcılar"
 
-#: data/reminduck.desktop.in:19
+#: data/reminduck.desktop.in.in:19
 #, fuzzy
 msgid "New reminder"
 msgstr "Hatırlatıcılar"
 
 # Serbest çeviri yapıldı
-#: data/reminduck.metainfo.xml.in:8
+#: data/reminduck.metainfo.xml.in.in:8
 #, fuzzy
 msgid "Remember your stuff in an adorably annoying way"
 msgstr "Önemli işlerinizi sevimli ve sinir bozucu bir şekilde size hatırlatır."
 
 # Serbest çeviri yapıldı.
-#: data/reminduck.metainfo.xml.in:10
+#: data/reminduck.metainfo.xml.in.in:10
 #, fuzzy
-msgid "A simple reminder app made to be quick and easy - Reminduck focuses on simple or recurrent reminders with set time and date and nothing else."
-msgstr "Reminduck hızlı ve kolay olması için üretilmiş basit bir hatırlatıcı uygulamasıdır. Belirtilen tarih ve saatten ile başka hiçbir şey içermez ve basitçe hatırlatıcılara odaklanır."
+msgid ""
+"A simple reminder app made to be quick and easy - Reminduck focuses on "
+"simple or recurrent reminders with set time and date and nothing else."
+msgstr ""
+"Reminduck hızlı ve kolay olması için üretilmiş basit bir hatırlatıcı "
+"uygulamasıdır. Belirtilen tarih ve saatten ile başka hiçbir şey içermez ve "
+"basitçe hatırlatıcılara odaklanır."
 
-#: data/reminduck.metainfo.xml.in:12
-msgid "It's perfect if all you want are simple or daily/weekly/monthly reminders. Anything more than that is not achievable by Reminduck right now - but you can help! Open an issue or a pull request if you have any ideas or requests."
-msgstr "Tek istediğiniz basit veya günlük/haftalık/aylık hatırlatmalar ise mükemmeldir. Bundan daha fazlası şu anda Reminduck tarafından gerçekleştirilemez - ancak yardımcı olabilirsiniz! Herhangi bir fikriniz veya isteğiniz varsa bir sorun veya çekme isteği açın."
+#: data/reminduck.metainfo.xml.in.in:12
+msgid ""
+"It's perfect if all you want are simple or daily/weekly/monthly reminders. "
+"Anything more than that is not achievable by Reminduck right now - but you "
+"can help! Open an issue or a pull request if you have any ideas or requests."
+msgstr ""
+"Tek istediğiniz basit veya günlük/haftalık/aylık hatırlatmalar ise "
+"mükemmeldir. Bundan daha fazlası şu anda Reminduck tarafından "
+"gerçekleştirilemez - ancak yardımcı olabilirsiniz! Herhangi bir fikriniz "
+"veya isteğiniz varsa bir sorun veya çekme isteği açın."
 
-#: data/reminduck.metainfo.xml.in:14
+#: data/reminduck.metainfo.xml.in.in:14
 msgid "And it quacks."
 msgstr "Vaklamasını da bilir."
 
-#: data/reminduck.metainfo.xml.in:19
+#: data/reminduck.metainfo.xml.in.in:30
+msgid "Organization change"
+msgstr ""
+
+#: data/reminduck.metainfo.xml.in.in:36
 msgid "✨Pond Info News✨"
 msgstr "✨Pond Info Haberleri✨"
 
-#: data/reminduck.metainfo.xml.in:21
+#: data/reminduck.metainfo.xml.in.in:38
 msgid "Cleaner code and user interface"
 msgstr "Daha temiz kod ve kullanıcı arayüzü"
 
-#: data/reminduck.metainfo.xml.in:22
+#: data/reminduck.metainfo.xml.in.in:39
 msgid "Added repeat x every hours"
 msgstr "Her saat x tekrar eklendi"
 
-#: data/reminduck.metainfo.xml.in:23
+#: data/reminduck.metainfo.xml.in.in:40
 msgid "Added more control for when repeating quacks"
 msgstr "Tekrarlanan vakvaklar için daha fazla kontrol eklendi"
 
-#: data/reminduck.metainfo.xml.in:24
+#: data/reminduck.metainfo.xml.in.in:41
+msgid "Allow deleting from the editor"
+msgstr ""
+
+#: data/reminduck.metainfo.xml.in.in:42
 msgid "Added vietnamese translations thanks to @hthienloc!"
 msgstr "Vietnamca çeviriler @hthienloc sayesinde eklendi!"
 
-#: data/reminduck.metainfo.xml.in:35
+#: data/reminduck.metainfo.xml.in.in:43
+#, fuzzy
+msgid "Updated italian translations thanks to @albanobattistella!"
+msgstr "- 🇮🇹 Güncellenmiş İtalyanca çeviri (@albanobattistella)"
+
+#: data/reminduck.metainfo.xml.in.in:54
 msgid "Updated russian translations thanks to @ma12vlad"
 msgstr "Rusça çeviriler @ma12vlad sayesinde güncellendi"
 
-#: data/reminduck.metainfo.xml.in:42
+#: data/reminduck.metainfo.xml.in.in:61
 msgid "Settings have been moved into their own view"
 msgstr "Ayarlar kendi görünümlerine taşındı"
 
-#: data/reminduck.metainfo.xml.in:43
-msgid "Right click on the icon and choose \"New reminder\" to jump immediately in the editor"
-msgstr "Simgeye sağ tıklayın ve hemen düzenleyiciye atlamak için \"Yeni hatırlatıcı \"yı seçin"
+#: data/reminduck.metainfo.xml.in.in:62
+msgid ""
+"Right click on the icon and choose \"New reminder\" to jump immediately in "
+"the editor"
+msgstr ""
+"Simgeye sağ tıklayın ve hemen düzenleyiciye atlamak için \"Yeni hatırlatıcı "
+"\"yı seçin"
 
-#: data/reminduck.metainfo.xml.in:49
+#: data/reminduck.metainfo.xml.in.in:68
 msgid "✨NEW IN THE POND✨"
 msgstr "✨GÖLETTE YENI✨"
 
-#: data/reminduck.metainfo.xml.in:51
+#: data/reminduck.metainfo.xml.in.in:70
 msgid "FINALLY a quack setting 🦆 You can even preview the sound!"
 msgstr "SONUNDA bir vakvak ayarı 🦆 Sesi önizleyebilirsiniz bile!"
 
-#: data/reminduck.metainfo.xml.in:52
+#: data/reminduck.metainfo.xml.in.in:71
 msgid "Added a menu button with a popover"
 msgstr "Açılır pencereli bir menü düğmesi eklendi"
 
-#: data/reminduck.metainfo.xml.in:53
+#: data/reminduck.metainfo.xml.in.in:72
 msgid "Added toggle to change notification persistency"
 msgstr "Bildirim kalıcılığını değiştirmek için geçiş eklendi"
 
-#: data/reminduck.metainfo.xml.in:54
+#: data/reminduck.metainfo.xml.in.in:73
 msgid "Added buttons to set/remove autostart"
 msgstr "Otomatik başlatmayı ayarlamak/kaldırmak için düğmeler eklendi"
 
-#: data/reminduck.metainfo.xml.in:55
+#: data/reminduck.metainfo.xml.in.in:74
 msgid "Bugfix: Now \"Show Reminders\" should display correctly"
-msgstr "Hata Düzeltmesi: Artık \"Hatırlatıcıları Göster\" doğru şekilde görüntülenmeli"
+msgstr ""
+"Hata Düzeltmesi: Artık \"Hatırlatıcıları Göster\" doğru şekilde "
+"görüntülenmeli"
 
-#: data/reminduck.metainfo.xml.in:62
+#: data/reminduck.metainfo.xml.in.in:81
 msgid "Repaired autostart feature"
 msgstr "Otomatik başlatma özelliği onarıldı"
 
-#: data/reminduck.metainfo.xml.in:63
+#: data/reminduck.metainfo.xml.in.in:82
 #, fuzzy
 msgid "Updated IT translation by @albanobattistella"
 msgstr "- 🇮🇹 Güncellenmiş İtalyanca çeviri (@albanobattistella)"
 
-#: data/reminduck.metainfo.xml.in:64
+#: data/reminduck.metainfo.xml.in.in:83
 msgid "Corrections for appcenter"
 msgstr "Appcenter için düzeltmeler"
 
-#: data/reminduck.metainfo.xml.in:70
+#: data/reminduck.metainfo.xml.in.in:89
 #, fuzzy
-msgid "🦆🦆The quack is back!🦆🦆 A continuation of Reminduck, with the blessing of its original creator!"
-msgstr "Vakvak geri döndü! Orijinal yaratıcısının onayıyla Reminduck'ın devamı!"
+msgid ""
+"🦆🦆The quack is back!🦆🦆 A continuation of Reminduck, with the blessing of "
+"its original creator!"
+msgstr ""
+"Vakvak geri döndü! Orijinal yaratıcısının onayıyla Reminduck'ın devamı!"
 
-#: data/reminduck.metainfo.xml.in:72
+#: data/reminduck.metainfo.xml.in.in:91
 msgid "Adapted to modern libraries (GTK4, Flatpak)"
 msgstr "Modern kütüphanelere uyarlanmıştır (GTK4, Flatpak)"
 
-#: data/reminduck.metainfo.xml.in:73
+#: data/reminduck.metainfo.xml.in.in:92
 msgid "Make the whole window grabbable"
 msgstr "Tüm pencereyi yakalanabilir hale getirin"
 
-#: data/reminduck.metainfo.xml.in:74
+#: data/reminduck.metainfo.xml.in.in:93
 msgid "No quack sound yet but that will come"
 msgstr "Henüz vakvak sesi yok ama o da gelecek."
 
 # Geliştirici adı, çevirmeyin.
-#: data/reminduck.metainfo.xml.in:92
+#: data/reminduck.metainfo.xml.in.in:107
 #, fuzzy
-msgid "Matheus Fantinel + Stella"
+msgid "Matheus Fantinel + Stella and Charlie"
 msgstr "Matheus Fantinel"
 
-#: data/reminduck.metainfo.xml.in:106
+#: data/reminduck.metainfo.xml.in.in:122
 msgid "Personal"
 msgstr "Kişisel"
 
-#: data/reminduck.metainfo.xml.in:107
+#: data/reminduck.metainfo.xml.in.in:123
 msgid "Assistant"
 msgstr "Asistan"
 
-#: data/reminduck.metainfo.xml.in:109
+#: data/reminduck.metainfo.xml.in.in:125
 msgid "Remember"
 msgstr "Unutmayın"
 
-#: data/reminduck.metainfo.xml.in:110
+#: data/reminduck.metainfo.xml.in.in:126
 msgid "Duck"
 msgstr "Ördek"
 
-#: data/reminduck.metainfo.xml.in:111
+#: data/reminduck.metainfo.xml.in.in:127
 msgid "Quack"
 msgstr "Vakvak"
 
-#: data/reminduck.metainfo.xml.in:112
+#: data/reminduck.metainfo.xml.in.in:128
 msgid "Cute"
 msgstr "Şirin"
 
-#: data/reminduck.metainfo.xml.in:113
+#: data/reminduck.metainfo.xml.in.in:129
 msgid "Utility"
 msgstr "Yardımcı Program"
 
-#: data/reminduck.metainfo.xml.in:114
+#: data/reminduck.metainfo.xml.in.in:130
 msgid "Pantheon"
 msgstr "Pantheon"
 
-#: data/reminduck.metainfo.xml.in:115
+#: data/reminduck.metainfo.xml.in.in:131
 msgid "elementary OS"
 msgstr "temel işletim sistemi"
 
-#: data/reminduck.metainfo.xml.in:120
+#: data/reminduck.metainfo.xml.in.in:136
 msgid "The welcome view"
 msgstr "Hoş geldiniz manzarası"
 
-#: data/reminduck.metainfo.xml.in:124
+#: data/reminduck.metainfo.xml.in.in:140
 #, fuzzy
 msgid "Add new reminders"
 msgstr "Hatırlatıcılar"
 
-#: data/reminduck.metainfo.xml.in:128
+#: data/reminduck.metainfo.xml.in.in:144
 msgid "Add new reminders but in dark"
 msgstr "Yeni hatırlatıcılar ekleyin ancak karanlıkta"
 
-#: data/reminduck.metainfo.xml.in:132
+#: data/reminduck.metainfo.xml.in.in:148
 msgid "See current reminders"
 msgstr "Güncel hatırlatıcıları görün"
 
-#: data/reminduck.metainfo.xml.in:136
+#: data/reminduck.metainfo.xml.in.in:152
 msgid "See current reminders but in dark"
 msgstr "Mevcut hatırlatıcıları görün ancak karanlıkta"
 
@@ -211,9 +243,6 @@ msgstr "Mevcut hatırlatıcıları görün ancak karanlıkta"
 
 #~ msgid "- Support for elementary OS 6.0 Odin!"
 #~ msgstr "- Elementary OS 6.0 Odin için destek!"
-
-#~ msgid "- 🇮🇹 Updated italian translation (@albanobattistella)"
-#~ msgstr "- 🇮🇹 Güncellenmiş İtalyanca çeviri (@albanobattistella)"
 
 #~ msgid "- 🇩🇪 German translation (@Technipion)"
 #~ msgstr "- 🇩🇪 Almanca çeviri (@Technipion)"
@@ -227,11 +256,18 @@ msgstr "Mevcut hatırlatıcıları görün ancak karanlıkta"
 #~ msgid "🌑 Dark-mode toggle on the header bar"
 #~ msgstr "🌑 Üstbilgi çubuğunda karanlık mod geçişi"
 
-#~ msgid "🔔 Notifications now stick around until you close them, to make sure you don't miss your quacks"
-#~ msgstr "🔔 Bildirimler artık siz onları kapatana kadar kalıyor, böylece vakvaklarınızı kaçırmadığınızdan emin oluyorsunuz"
+#~ msgid ""
+#~ "🔔 Notifications now stick around until you close them, to make sure you "
+#~ "don't miss your quacks"
+#~ msgstr ""
+#~ "🔔 Bildirimler artık siz onları kapatana kadar kalıyor, böylece "
+#~ "vakvaklarınızı kaçırmadığınızdan emin oluyorsunuz"
 
-#~ msgid "🌟 Support for additional GTK themes, making Reminduck distro-agnostic"
-#~ msgstr "🌟 Ek GTK temaları için destek, Reminduck'ı dağıtımdan bağımsız hale getirir"
+#~ msgid ""
+#~ "🌟 Support for additional GTK themes, making Reminduck distro-agnostic"
+#~ msgstr ""
+#~ "🌟 Ek GTK temaları için destek, Reminduck'ı dağıtımdan bağımsız hale "
+#~ "getirir"
 
 #~ msgid "🇪🇸 Spanish Translation (Alejandro Elí | @onerbs)"
 #~ msgstr "🇪🇸 İspanyolca Çeviri (Alejandro Elí | @onerbs)"
@@ -239,20 +275,32 @@ msgstr "Mevcut hatırlatıcıları görün ancak karanlıkta"
 #~ msgid "🇮🇹 Italian Translation (Mirko Brombin | @mirkobrombin)"
 #~ msgstr "🇮🇹 İtalyanca Çeviri (Mirko Brombin | @mirkobrombin)"
 
-#~ msgid "🐥️ New Icon! - hopefully this one looks better than the previous one. With great help from Nararyans R.I. (@Fatih20)"
-#~ msgstr "🐥️ Yeni Simge! - umarım bu öncekinden daha iyi görünür. Nararyans R.I.'nin (@Fatih20) büyük yardımı ile"
+#~ msgid ""
+#~ "🐥️ New Icon! - hopefully this one looks better than the previous one. "
+#~ "With great help from Nararyans R.I. (@Fatih20)"
+#~ msgstr ""
+#~ "🐥️ Yeni Simge! - umarım bu öncekinden daha iyi görünür. Nararyans R."
+#~ "I.'nin (@Fatih20) büyük yardımı ile"
 
-#~ msgid "💁‍ Increased compatibility with translations (Corentin Noël | @tintou)"
+#~ msgid ""
+#~ "💁‍ Increased compatibility with translations (Corentin Noël | @tintou)"
 #~ msgstr "💁‍ Çevirilerle uyumluluk artırıldı (Corentin Noël | @tintou)"
 
 #~ msgid "🇨🇵️ French Translation (Nathan Bonnemains | @NathanBnm)"
 #~ msgstr "🇨🇵️ Fransızca Çeviri (Nathan Bonnemains | @NathanBnm)"
 
-#~ msgid "🔁️ Recurrent reminders - you can now have reminders that show up in set periods of time: every day, week, month, or a set interval"
-#~ msgstr "🔁️ Tekrarlayan hatırlatıcılar - artık belirli zaman aralıklarında görünen hatırlatıcılara sahip olabilirsiniz: her gün, hafta, ay veya belirli bir aralıkta"
+#~ msgid ""
+#~ "🔁️ Recurrent reminders - you can now have reminders that show up in set "
+#~ "periods of time: every day, week, month, or a set interval"
+#~ msgstr ""
+#~ "🔁️ Tekrarlayan hatırlatıcılar - artık belirli zaman aralıklarında görünen "
+#~ "hatırlatıcılara sahip olabilirsiniz: her gün, hafta, ay veya belirli bir "
+#~ "aralıkta"
 
 #~ msgid "🌟️ General UI improvements to make settings up quacks more pleasant"
-#~ msgstr "🌟️ Vakvak ayarlarını daha keyifli hale getirmek için genel kullanıcı arayüzü iyileştirmeleri"
+#~ msgstr ""
+#~ "🌟️ Vakvak ayarlarını daha keyifli hale getirmek için genel kullanıcı "
+#~ "arayüzü iyileştirmeleri"
 
 #~ msgid "🌃️ Dark Mode is now prettier"
 #~ msgstr "🌃️ Karanlık Mod artık daha güzel"
@@ -267,7 +315,8 @@ msgstr "Mevcut hatırlatıcıları görün ancak karanlıkta"
 #~ msgstr "Resmi olmayan \"Koyu Temayı Tercih Et\" ayarını destekleyin 🌝️"
 
 #~ msgid "This should also make it work with other dark GTK themes"
-#~ msgstr "Bu aynı zamanda diğer koyu GTK temalarıyla da çalışmasını sağlamalıdır"
+#~ msgstr ""
+#~ "Bu aynı zamanda diğer koyu GTK temalarıyla da çalışmasını sağlamalıdır"
 
 #, fuzzy
 #~ msgid "Initial Release 🦆"

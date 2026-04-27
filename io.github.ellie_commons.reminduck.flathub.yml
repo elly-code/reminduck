@@ -1,0 +1,36 @@
+id: io.github.ellie_commons.reminduck
+# elementary SDK is not available on Flathub, so use the elementary BaseApp instead
+base: io.elementary.BaseApp
+base-version: 'circe-25.08'
+runtime: org.gnome.Platform
+runtime-version: '50'
+sdk: org.gnome.Sdk
+command: io.github.ellie_commons.reminduck
+
+finish-args:
+  - '--share=ipc'
+  - '--device=dri'
+  - '--socket=fallback-x11'
+  - '--socket=wayland'
+  # Required to do a quack sound
+  - '--socket=pulseaudio'
+
+cleanup:
+  - /include
+  - /lib/girepository-1.0
+  - /lib/pkgconfig
+  - /share/gir-1.0
+  - /share/vala
+
+# Cleanup development-related files inherited from the BaseApp to reduce package size of your app.
+cleanup-commands:
+  - /app/cleanup-BaseApp.sh
+
+modules:
+  - name: reminduck
+    buildsystem: meson
+    config-opts:
+      - -Dlegacy-rdnn=true
+    sources:
+      - type: dir
+        path: .

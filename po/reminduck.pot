@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the io.github.elly_code.reminduck package.
+# This file is distributed under the same license as the reminduck package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: io.github.elly_code.reminduck\n"
+"Project-Id-Version: reminduck\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-26 21:16+0100\n"
+"POT-Creation-Date: 2026-04-27 15:24+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,28 +19,32 @@ msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
 #. If reminder date < current date
-#: src/Application.vala:219
+#: src/Application.vala:220
 msgid "QUACK!"
 msgstr ""
 
-#: src/MainWindow.vala:45 src/MainWindow.vala:46
+#: src/MainWindow.vala:48 src/MainWindow.vala:49
 msgid "Reminduck"
 msgstr ""
 
-#: src/MainWindow.vala:70
+#: src/MainWindow.vala:73
 msgid "Back"
 msgstr ""
 
-#: src/MainWindow.vala:72
+#: src/MainWindow.vala:75
 msgid "Click to return to main view"
 msgstr ""
 
-#: src/Objects/Quack.vala:47 src/Objects/Quack.vala:49
+#: src/Objects/Quack.vala:56 src/Objects/Quack.vala:59
 msgid "Default Duck"
 msgstr ""
 
-#: src/Objects/Quack.vala:48
+#: src/Objects/Quack.vala:57
 msgid "Plastic Duck"
+msgstr ""
+
+#: src/Objects/Quack.vala:58
+msgid "Random Duck"
 msgstr ""
 
 #. /TRANSLATORS: [0] is singular form, [1] is plural form. These are displayed as menu items

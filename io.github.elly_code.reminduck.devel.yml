@@ -1,0 +1,31 @@
+#
+# This is danger
+#
+id: io.github.elly_code.reminduck.devel
+# elementary SDK is not available on Flathub, so use the elementary BaseApp instead
+base: io.elementary.BaseApp
+base-version: 'circe-25.08'
+runtime: org.gnome.Platform
+runtime-version: '50'
+sdk: org.gnome.Sdk
+command: io.github.elly_code.reminduck.devel
+
+tags: ['devel']
+desktop-file-name-suffix: ' (Development)'
+
+finish-args:
+  - '--share=ipc'
+  - '--device=dri'
+  - '--socket=fallback-x11'
+  - '--socket=wayland'
+  # Required to do a quack sound
+  - '--socket=pulseaudio'
+
+modules:
+  - name: reminduck
+    buildsystem: meson
+    config-opts:
+      - -Ddevelopment=true
+    sources:
+      - type: dir
+        path: .

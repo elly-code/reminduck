@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-20 22:57+0100\n"
+"POT-Creation-Date: 2026-04-27 15:24+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,191 +17,203 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: data/reminduck.desktop.in:3 data/reminduck.metainfo.xml.in:7
+#: data/reminduck.desktop.in.in:3 data/reminduck.metainfo.xml.in.in:7
 msgid "Reminduck"
 msgstr ""
 
-#: data/reminduck.desktop.in:4 data/reminduck.metainfo.xml.in:108
+#: data/reminduck.desktop.in.in:4 data/reminduck.metainfo.xml.in.in:124
 msgid "Reminders"
 msgstr ""
 
-#: data/reminduck.desktop.in:5
+#: data/reminduck.desktop.in.in:5
 msgid "Don't forget about your stuff in an adorably annoying way"
 msgstr ""
 
-#: data/reminduck.desktop.in:15
+#: data/reminduck.desktop.in.in:15
 msgid "Reminduck;Personal;Assistant;Reminders;Remember;Duck;Quack;Cute;"
 msgstr ""
 
-#: data/reminduck.desktop.in:19
+#: data/reminduck.desktop.in.in:19
 msgid "New reminder"
 msgstr ""
 
-#: data/reminduck.metainfo.xml.in:8
+#: data/reminduck.metainfo.xml.in.in:8
 msgid "Remember your stuff in an adorably annoying way"
 msgstr ""
 
-#: data/reminduck.metainfo.xml.in:10
+#: data/reminduck.metainfo.xml.in.in:10
 msgid ""
 "A simple reminder app made to be quick and easy - Reminduck focuses on "
 "simple or recurrent reminders with set time and date and nothing else."
 msgstr ""
 
-#: data/reminduck.metainfo.xml.in:12
+#: data/reminduck.metainfo.xml.in.in:12
 msgid ""
 "It's perfect if all you want are simple or daily/weekly/monthly reminders. "
 "Anything more than that is not achievable by Reminduck right now - but you "
 "can help! Open an issue or a pull request if you have any ideas or requests."
 msgstr ""
 
-#: data/reminduck.metainfo.xml.in:14
+#: data/reminduck.metainfo.xml.in.in:14
 msgid "And it quacks."
 msgstr ""
 
-#: data/reminduck.metainfo.xml.in:19
+#: data/reminduck.metainfo.xml.in.in:30
+msgid "Organization change"
+msgstr ""
+
+#: data/reminduck.metainfo.xml.in.in:36
 msgid "✨Pond Info News✨"
 msgstr ""
 
-#: data/reminduck.metainfo.xml.in:21
+#: data/reminduck.metainfo.xml.in.in:38
 msgid "Cleaner code and user interface"
 msgstr ""
 
-#: data/reminduck.metainfo.xml.in:22
+#: data/reminduck.metainfo.xml.in.in:39
 msgid "Added repeat x every hours"
 msgstr ""
 
-#: data/reminduck.metainfo.xml.in:23
+#: data/reminduck.metainfo.xml.in.in:40
 msgid "Added more control for when repeating quacks"
 msgstr ""
 
-#: data/reminduck.metainfo.xml.in:24
+#: data/reminduck.metainfo.xml.in.in:41
+msgid "Allow deleting from the editor"
+msgstr ""
+
+#: data/reminduck.metainfo.xml.in.in:42
 msgid "Added vietnamese translations thanks to @hthienloc!"
 msgstr ""
 
-#: data/reminduck.metainfo.xml.in:35
+#: data/reminduck.metainfo.xml.in.in:43
+msgid "Updated italian translations thanks to @albanobattistella!"
+msgstr ""
+
+#: data/reminduck.metainfo.xml.in.in:54
 msgid "Updated russian translations thanks to @ma12vlad"
 msgstr ""
 
-#: data/reminduck.metainfo.xml.in:42
+#: data/reminduck.metainfo.xml.in.in:61
 msgid "Settings have been moved into their own view"
 msgstr ""
 
-#: data/reminduck.metainfo.xml.in:43
+#: data/reminduck.metainfo.xml.in.in:62
 msgid ""
 "Right click on the icon and choose \"New reminder\" to jump immediately in "
 "the editor"
 msgstr ""
 
-#: data/reminduck.metainfo.xml.in:49
+#: data/reminduck.metainfo.xml.in.in:68
 msgid "✨NEW IN THE POND✨"
 msgstr ""
 
-#: data/reminduck.metainfo.xml.in:51
+#: data/reminduck.metainfo.xml.in.in:70
 msgid "FINALLY a quack setting 🦆 You can even preview the sound!"
 msgstr ""
 
-#: data/reminduck.metainfo.xml.in:52
+#: data/reminduck.metainfo.xml.in.in:71
 msgid "Added a menu button with a popover"
 msgstr ""
 
-#: data/reminduck.metainfo.xml.in:53
+#: data/reminduck.metainfo.xml.in.in:72
 msgid "Added toggle to change notification persistency"
 msgstr ""
 
-#: data/reminduck.metainfo.xml.in:54
+#: data/reminduck.metainfo.xml.in.in:73
 msgid "Added buttons to set/remove autostart"
 msgstr ""
 
-#: data/reminduck.metainfo.xml.in:55
+#: data/reminduck.metainfo.xml.in.in:74
 msgid "Bugfix: Now \"Show Reminders\" should display correctly"
 msgstr ""
 
-#: data/reminduck.metainfo.xml.in:62
+#: data/reminduck.metainfo.xml.in.in:81
 msgid "Repaired autostart feature"
 msgstr ""
 
-#: data/reminduck.metainfo.xml.in:63
+#: data/reminduck.metainfo.xml.in.in:82
 msgid "Updated IT translation by @albanobattistella"
 msgstr ""
 
-#: data/reminduck.metainfo.xml.in:64
+#: data/reminduck.metainfo.xml.in.in:83
 msgid "Corrections for appcenter"
 msgstr ""
 
-#: data/reminduck.metainfo.xml.in:70
+#: data/reminduck.metainfo.xml.in.in:89
 msgid ""
 "🦆🦆The quack is back!🦆🦆 A continuation of Reminduck, with the blessing of "
 "its original creator!"
 msgstr ""
 
-#: data/reminduck.metainfo.xml.in:72
+#: data/reminduck.metainfo.xml.in.in:91
 msgid "Adapted to modern libraries (GTK4, Flatpak)"
 msgstr ""
 
-#: data/reminduck.metainfo.xml.in:73
+#: data/reminduck.metainfo.xml.in.in:92
 msgid "Make the whole window grabbable"
 msgstr ""
 
-#: data/reminduck.metainfo.xml.in:74
+#: data/reminduck.metainfo.xml.in.in:93
 msgid "No quack sound yet but that will come"
 msgstr ""
 
-#: data/reminduck.metainfo.xml.in:92
-msgid "Matheus Fantinel + Stella"
+#: data/reminduck.metainfo.xml.in.in:107
+msgid "Matheus Fantinel + Stella and Charlie"
 msgstr ""
 
-#: data/reminduck.metainfo.xml.in:106
+#: data/reminduck.metainfo.xml.in.in:122
 msgid "Personal"
 msgstr ""
 
-#: data/reminduck.metainfo.xml.in:107
+#: data/reminduck.metainfo.xml.in.in:123
 msgid "Assistant"
 msgstr ""
 
-#: data/reminduck.metainfo.xml.in:109
+#: data/reminduck.metainfo.xml.in.in:125
 msgid "Remember"
 msgstr ""
 
-#: data/reminduck.metainfo.xml.in:110
+#: data/reminduck.metainfo.xml.in.in:126
 msgid "Duck"
 msgstr ""
 
-#: data/reminduck.metainfo.xml.in:111
+#: data/reminduck.metainfo.xml.in.in:127
 msgid "Quack"
 msgstr ""
 
-#: data/reminduck.metainfo.xml.in:112
+#: data/reminduck.metainfo.xml.in.in:128
 msgid "Cute"
 msgstr ""
 
-#: data/reminduck.metainfo.xml.in:113
+#: data/reminduck.metainfo.xml.in.in:129
 msgid "Utility"
 msgstr ""
 
-#: data/reminduck.metainfo.xml.in:114
+#: data/reminduck.metainfo.xml.in.in:130
 msgid "Pantheon"
 msgstr ""
 
-#: data/reminduck.metainfo.xml.in:115
+#: data/reminduck.metainfo.xml.in.in:131
 msgid "elementary OS"
 msgstr ""
 
-#: data/reminduck.metainfo.xml.in:120
+#: data/reminduck.metainfo.xml.in.in:136
 msgid "The welcome view"
 msgstr ""
 
-#: data/reminduck.metainfo.xml.in:124
+#: data/reminduck.metainfo.xml.in.in:140
 msgid "Add new reminders"
 msgstr ""
 
-#: data/reminduck.metainfo.xml.in:128
+#: data/reminduck.metainfo.xml.in.in:144
 msgid "Add new reminders but in dark"
 msgstr ""
 
-#: data/reminduck.metainfo.xml.in:132
+#: data/reminduck.metainfo.xml.in.in:148
 msgid "See current reminders"
 msgstr ""
 
-#: data/reminduck.metainfo.xml.in:136
+#: data/reminduck.metainfo.xml.in.in:152
 msgid "See current reminders but in dark"
 msgstr ""

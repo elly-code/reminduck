@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.github.elly_code.reminduck\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-26 21:16+0100\n"
+"POT-Creation-Date: 2026-04-27 15:24+0200\n"
 "PO-Revision-Date: 2026-01-14 16:01+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: \n"
@@ -20,29 +20,33 @@ msgstr ""
 "X-Generator: Poedit 3.8\n"
 
 #. If reminder date < current date
-#: src/Application.vala:219
+#: src/Application.vala:220
 msgid "QUACK!"
 msgstr "KVACK!"
 
-#: src/MainWindow.vala:45 src/MainWindow.vala:46
+#: src/MainWindow.vala:48 src/MainWindow.vala:49
 msgid "Reminduck"
 msgstr "Reminduck"
 
-#: src/MainWindow.vala:70
+#: src/MainWindow.vala:73
 msgid "Back"
 msgstr "Tillbaka"
 
-#: src/MainWindow.vala:72
+#: src/MainWindow.vala:75
 msgid "Click to return to main view"
 msgstr "Klicka för att återgå till huvudvyn"
 
-#: src/Objects/Quack.vala:47 src/Objects/Quack.vala:49
+#: src/Objects/Quack.vala:56 src/Objects/Quack.vala:59
 msgid "Default Duck"
 msgstr "Standardanka"
 
-#: src/Objects/Quack.vala:48
+#: src/Objects/Quack.vala:57
 msgid "Plastic Duck"
 msgstr "Plastanka"
+
+#: src/Objects/Quack.vala:58
+msgid "Random Duck"
+msgstr ""
 
 #. /TRANSLATORS: [0] is singular form, [1] is plural form. These are displayed as menu items
 #: src/Objects/Reminder.vala:28
@@ -86,7 +90,8 @@ msgstr "Gör ett kvackande ljud"
 
 #: src/Widgets/QuackBox.vala:31 src/Views/SettingsView.vala:65
 msgid "If enabled, the duck will quack when reminding you"
-msgstr "Om funktionen är aktiverad kommer ankan att kvacka när den påminner dig"
+msgstr ""
+"Om funktionen är aktiverad kommer ankan att kvacka när den påminner dig"
 
 #: src/Widgets/QuackBox.vala:45 src/Views/SettingsView.vala:48
 msgid "Click to preview reminder sound"
@@ -204,7 +209,8 @@ msgstr "Bestående aviseringar"
 
 #: src/Views/SettingsView.vala:125
 msgid "If enabled, the duck will stay until (gently) dismissed"
-msgstr "Om funktionen är aktiverad stannar ankan kvar tills den (försiktigt) avvisas"
+msgstr ""
+"Om funktionen är aktiverad stannar ankan kvar tills den (försiktigt) avvisas"
 
 #. /TRANSLATORS: Button to autostart the application
 #: src/Views/SettingsView.vala:141
@@ -221,7 +227,8 @@ msgid "Autostart in the background"
 msgstr "Autostarta i bakgrunden"
 
 #: src/Views/SettingsView.vala:171
-msgid "Request the system to start the application in the background when you log in"
+msgid ""
+"Request the system to start the application in the background when you log in"
 msgstr "Begär att systemet startar applikationen i bakgrunden när du loggar in"
 
 #: src/Views/SettingsView.vala:194
