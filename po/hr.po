@@ -1,0 +1,253 @@
+# Croatian translation for reminduck.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the reminduck package.
+# Milo Ivir <mail@milotype.de>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: reminduck\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-27 15:24+0200\n"
+"PO-Revision-Date: 2026-05-13 14:29+0200\n"
+"Last-Translator: Milo Ivir <mail@milotype.de>\n"
+"Language-Team: \n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.9\n"
+
+#. If reminder date < current date
+#: src/Application.vala:220
+msgid "QUACK!"
+msgstr "KVAK-KVAK!"
+
+#: src/MainWindow.vala:48 src/MainWindow.vala:49
+msgid "Reminduck"
+msgstr "Reminduck"
+
+#: src/MainWindow.vala:73
+msgid "Back"
+msgstr "Natrag"
+
+#: src/MainWindow.vala:75
+msgid "Click to return to main view"
+msgstr "Klikni za povratak na glavni prikaz"
+
+#: src/Objects/Quack.vala:56 src/Objects/Quack.vala:59
+msgid "Default Duck"
+msgstr "Standardna patka"
+
+#: src/Objects/Quack.vala:57
+msgid "Plastic Duck"
+msgstr "Plastična patka"
+
+#: src/Objects/Quack.vala:58
+msgid "Random Duck"
+msgstr "Slučajna patka"
+
+#. /TRANSLATORS: [0] is singular form, [1] is plural form. These are displayed as menu items
+#: src/Objects/Reminder.vala:28
+msgid "Don't Repeat"
+msgstr "Ne ponavljaj"
+
+#: src/Objects/Reminder.vala:29
+msgid "Minute"
+msgid_plural "Minutes"
+msgstr[0] "minuta"
+msgstr[1] "minute"
+msgstr[2] "minuta"
+
+#: src/Objects/Reminder.vala:30
+msgid "Hour"
+msgid_plural "Hours"
+msgstr[0] "sat"
+msgstr[1] "sata"
+msgstr[2] "sati"
+
+#: src/Objects/Reminder.vala:31
+msgid "Day"
+msgid_plural "Days"
+msgstr[0] "dan"
+msgstr[1] "dana"
+msgstr[2] "dana"
+
+#: src/Objects/Reminder.vala:32
+msgid "Week"
+msgid_plural "Weeks"
+msgstr[0] "tjedan"
+msgstr[1] "tjedna"
+msgstr[2] "tjedna"
+
+#: src/Objects/Reminder.vala:33
+msgid "Month"
+msgid_plural "Months"
+msgstr[0] "mjesec"
+msgstr[1] "mjeseca"
+msgstr[2] "mjeseci"
+
+#. minibox.append (quack_toggle);
+#: src/Widgets/QuackBox.vala:29 src/Views/SettingsView.vala:63
+msgid "Do a quack sound"
+msgstr "Odsviraj zvuk kvakanja"
+
+#: src/Widgets/QuackBox.vala:31 src/Views/SettingsView.vala:65
+msgid "If enabled, the duck will quack when reminding you"
+msgstr "Ako je aktivirano, patka će kvakati kada te podsjeti"
+
+#: src/Widgets/QuackBox.vala:45 src/Views/SettingsView.vala:48
+msgid "Click to preview reminder sound"
+msgstr "Klikni za pregled zvuka podsjetnika"
+
+#: src/Widgets/QuackBox.vala:56
+msgid "Choose your quack"
+msgstr "Odaberi svoje kvakanje"
+
+#: src/Widgets/QuackBox.vala:58
+msgid "Which will be your champion?"
+msgstr "Koje će biti tvoj favorit?"
+
+#: src/Widgets/QuackBox.vala:70 src/Views/SettingsView.vala:76
+msgid "Notifications"
+msgstr "Obavijesti"
+
+#: src/Widgets/QuackBox.vala:86
+msgid "You can disable system notification sounds in the system settings"
+msgstr "U postavkama sustava možeš isključiti zvukove za obavijesti sustava"
+
+#. /TRANSLATORS: If your language doesnt match "Every XX Minutes/Month/etc" pattern please tell me!!!!!! So i can adapt it for your lang
+#: src/Widgets/RepeatBox.vala:54
+msgid "Every"
+msgstr "Svakih"
+
+#: src/Views/ReminderEditor.vala:45
+msgid "What do you want to be reminded of?"
+msgstr "Na što želiš da te se podsjeti?"
+
+#: src/Views/ReminderEditor.vala:69
+msgid "Repeat"
+msgstr "Ponovi"
+
+#: src/Views/ReminderEditor.vala:85 src/Views/RemindersView.vala:119
+msgid "Delete"
+msgstr "Izbriši"
+
+#: src/Views/ReminderEditor.vala:88
+msgid "Save reminder"
+msgstr "Spremi podsjetnik"
+
+#: src/Views/ReminderEditor.vala:170
+msgid "Edit reminder"
+msgstr "Uredi podsjetnik"
+
+#: src/Views/ReminderEditor.vala:175
+msgid "Create a new reminder"
+msgstr "Stvori novi podsjetnik"
+
+#: src/Views/RemindersView.vala:29
+msgid "Your reminders"
+msgstr "Tvoji podsjetnici"
+
+#: src/Views/RemindersView.vala:39
+msgid "Create another"
+msgstr "Stvori jedan drugi"
+
+#: src/Views/RemindersView.vala:84
+#, c-format
+msgid "Reminded: %s"
+msgstr "Podsjećeno: %s"
+
+#: src/Views/RemindersView.vala:100
+msgid "Today"
+msgstr "Danas"
+
+#: src/Views/RemindersView.vala:112
+msgid "Edit"
+msgstr "Uredi"
+
+#: src/Views/WelcomeView.vala:34
+msgid "QUACK! I'm Reminduck"
+msgstr "KVAK-KVAK! Ja sam Reminduck"
+
+#: src/Views/WelcomeView.vala:35
+msgid "The duck that reminds you"
+msgstr "Patka koja te podsjeća"
+
+#: src/Views/WelcomeView.vala:42
+msgid "New Reminder"
+msgstr "Novi podsjetnik"
+
+#: src/Views/WelcomeView.vala:43
+msgid "Create a new reminder for a set date and time"
+msgstr "Stvori novi podsjetnik za određeni datum i vrijeme"
+
+#: src/Views/WelcomeView.vala:48
+msgid "View Reminders"
+msgstr "Pogledaj podsjetnike"
+
+#: src/Views/WelcomeView.vala:49
+msgid "See reminders you've created"
+msgstr "Pogledaj svoje podsjetnike"
+
+#: src/Views/WelcomeView.vala:54 src/Views/SettingsView.vala:32
+msgid "Settings"
+msgstr "Postavke"
+
+#: src/Views/WelcomeView.vala:55
+msgid "Tweak a few things"
+msgstr "Prilagodi par stvari"
+
+#: src/Views/SettingsView.vala:28
+msgid "Request to system sent"
+msgstr "Zahtjev sustavu je poslan"
+
+#: src/Views/SettingsView.vala:92
+msgid "You can disable the 'DING' sound in the system settings"
+msgstr "Zvuk „DING” možeš isključiti u postavkama sustava"
+
+#: src/Views/SettingsView.vala:123
+msgid "Persistent notifications"
+msgstr "Stalne obavijesti"
+
+#: src/Views/SettingsView.vala:125
+msgid "If enabled, the duck will stay until (gently) dismissed"
+msgstr "Ako je aktivirano, patka ostaje dok se (nježno) ne otpusti"
+
+#. /TRANSLATORS: Button to autostart the application
+#: src/Views/SettingsView.vala:141
+msgid "Enable"
+msgstr "Aktiviraj"
+
+#. /TRANSLATORS: Button to remove the autostart for the application
+#: src/Views/SettingsView.vala:153
+msgid "Disable"
+msgstr "Deaktiviraj"
+
+#: src/Views/SettingsView.vala:169
+msgid "Autostart in the background"
+msgstr "Automatsko pokretanje u pozadini"
+
+#: src/Views/SettingsView.vala:171
+msgid "Request the system to start the application in the background when you log in"
+msgstr "Zatraži od sustava da pokrene aplikaciju u pozadini kad se prijaviš"
+
+#: src/Views/SettingsView.vala:194
+msgid "Support us!"
+msgstr "Podrži nas!"
+
+#: src/Views/SettingsView.vala:202
+msgid "Reset to Default"
+msgstr "Resetiraj na standardne vrijednosti"
+
+#: src/Views/SettingsView.vala:203
+msgid "Reset all settings to defaults"
+msgstr "Resetiraj sve postavke na standardne vrijednosti"
+
+#: src/Services/Utils.vala:18
+msgid "Autostart Reminduck in background to send reminders"
+msgstr "Automatski pokreni Reminduck u pozadini za slanje podsjetnika"
+
+#: src/Services/Utils.vala:34
+msgid "Remove Reminduck from autostart"
+msgstr "Ukloni Reminduck iz automatskog pokretanja"
