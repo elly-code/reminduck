@@ -19,6 +19,7 @@ public class Reminduck.Views.ReminderEditor : Gtk.Box {
     Granite.DatePicker date_picker;
     Granite.TimePicker time_picker;
     Reminduck.RepeatBox repeatbox;
+    Gtk.Switch persist_toggle;
 
     Gtk.Button delete_button;
     Gtk.Button save_button;
@@ -66,16 +67,49 @@ public class Reminduck.Views.ReminderEditor : Gtk.Box {
         fields_box.append (reminder_input);
         fields_box.append (date_time_container);
 
-        var label = new Gtk.Label (_("Repeat")) {
+        var repeat_label = new Gtk.Label (_("Repeat")) {
             margin_top = 6,
             halign = Gtk.Align.START
         };
-        label.add_css_class (Granite.STYLE_CLASS_H4_LABEL);
+        repeat_label.add_css_class (Granite.STYLE_CLASS_H4_LABEL);
 
-        fields_box.append (label);
+        fields_box.append (repeat_label);
         repeatbox = new Reminduck.RepeatBox ();
 
         fields_box.append (repeatbox);
+
+        /* ---------------- PERSISTENT TOGGLE ---------------- */
+        var persist_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 12) {
+            margin_top = 6,
+            halign = Gtk.Align.FILL,
+            hexpand = true
+        };
+
+        persist_toggle = new Gtk.Switch () {
+            valign = Gtk.Align.CENTER,
+            active = false
+        };
+
+        var persist_label = new Gtk.Label (_("Persistent notification")) {
+            halign = Gtk.Align.START,
+            hexpand = true
+        };
+        persist_label.add_css_class (Granite.STYLE_CLASS_H4_LABEL);
+
+        var persist_hint = new Gtk.Label (_("If enabled, the reminder will stay until dismissed")) {
+            halign = Gtk.Align.START,
+            hexpand = true
+        };
+        persist_hint.add_css_class (Granite.STYLE_CLASS_DIM_LABEL);
+
+        var persist_label_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 2);
+        persist_label_box.append (persist_label);
+        persist_label_box.append (persist_hint);
+
+        persist_box.append (persist_label_box);
+        persist_box.append (persist_toggle);
+
+        fields_box.append (persist_box);
 
         var buttons = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 12) {
             halign = Gtk.Align.END,
@@ -167,6 +201,9 @@ public class Reminduck.Views.ReminderEditor : Gtk.Box {
                 repeatbox.interval = reminder.recurrency_interval;
             }
 
+            repeatbox.weekdays = reminder.weekdays;
+            persist_toggle.active = reminder.persistent;
+
             title.label = _("Edit reminder");
             delete_button.visible = true;
 
@@ -189,6 +226,7 @@ public class Reminduck.Views.ReminderEditor : Gtk.Box {
         date_picker.date = new GLib.DateTime.now_local ().add_minutes (15);
         time_picker.time = this.date_picker.date;
         repeatbox.reset ();
+        persist_toggle.active = false;
     }
 
     private void on_save () {
@@ -197,6 +235,8 @@ public class Reminduck.Views.ReminderEditor : Gtk.Box {
             reminder.time = mount_datetime (date_picker.date, time_picker.time);
             reminder.recurrency_type = repeatbox.recurrency_type;
             reminder.recurrency_interval = (int)repeatbox.interval;
+            reminder.persistent = persist_toggle.active;
+            reminder.weekdays = repeatbox.weekdays;
 
             var result = ReminduckApp.database.upsert_reminder (reminder);
 

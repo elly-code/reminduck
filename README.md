@@ -25,9 +25,12 @@ You can download and install Reminduck from various sources:
 
 ## 🛣️ Roadmap
 
- - Change the deprecated widgets
- - Clean everything up a bit and simplify
- - Work on some old bugs
+ - ~~Change the deprecated widgets~~ ✅
+ - ~~Clean everything up a bit and simplify~~ ✅
+ - ~~Work on some old bugs~~ ✅
+ - Add weekly day selection (issue #93) ✅
+ - Add yearly recurrence (issue #60) ✅
+ - Per-reminder persistent notification toggle (issue #74) ✅
 
 
 ## 💝 Donations

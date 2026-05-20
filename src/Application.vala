@@ -220,7 +220,7 @@ namespace Reminduck {
                     var notification = new Notification (_("QUACK!"));
                     notification.set_body (reminder.description);
 
-                    if (settings.get_boolean ("persistent")) {
+                    if (reminder.persistent) {
                         notification.set_priority (GLib.NotificationPriority.URGENT);
                     } else {
                         notification.set_priority (GLib.NotificationPriority.NORMAL);
@@ -253,12 +253,35 @@ namespace Reminduck {
                                 case RecurrencyType.EVERY_DAY:
                                     new_time = reminder.time.add_days (reminder.recurrency_interval);
                                     break;
+
                                 case RecurrencyType.EVERY_WEEK:
-                                    new_time = reminder.time.add_weeks (reminder.recurrency_interval);
+                                    // If weekdays are set, find next matching day
+                                    if (reminder.weekdays != 0) {
+                                        new_time = Weekdays.next_matching_day (
+                                            reminder.time.add_days (1), reminder.weekdays
+                                        );
+                                        // Preserve the original time of day
+                                        new_time = new GLib.DateTime.local (
+                                            new_time.get_year (),
+                                            new_time.get_month (),
+                                            new_time.get_day_of_month (),
+                                            reminder.time.get_hour (),
+                                            reminder.time.get_minute (),
+                                            0
+                                        );
+                                    } else {
+                                        new_time = reminder.time.add_weeks (reminder.recurrency_interval);
+                                    }
                                     break;
+
                                 case RecurrencyType.EVERY_MONTH:
                                     new_time = reminder.time.add_months (reminder.recurrency_interval);
                                     break;
+
+                                case RecurrencyType.EVERY_YEAR:
+                                    new_time = reminder.time.add_years (reminder.recurrency_interval);
+                                    break;
+
                                 default:
                                     break;
                             }
@@ -270,11 +293,14 @@ namespace Reminduck {
                                 new_reminder.description = reminder.description;
                                 new_reminder.recurrency_type = reminder.recurrency_type;
                                 new_reminder.recurrency_interval = reminder.recurrency_interval;
+                                new_reminder.persistent = reminder.persistent;
+                                new_reminder.weekdays = reminder.weekdays;
 
                                 database.upsert_reminder (new_reminder);
                                 break;
                             }
                             //else, keep looping
+                            reminder.time = new_time;
                         }
                     }
 

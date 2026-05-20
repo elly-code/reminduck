@@ -39,9 +39,9 @@ public class Reminduck.Database {
     }
 
     /**
-    * Check we have everything
-    * We can sneak updates in the database model here
-    */
+     * Check we have everything
+     * We can sneak updates in the database model here
+     */
     public void verify_database (bool? plsbump = false) {
 
         // Make sure data directory is here
@@ -71,6 +71,12 @@ public class Reminduck.Database {
 
         initialize_database ();
 
+        // Migration: add persistent column if missing
+        add_column_if_missing ("persistent", "INTEGER NULL");
+
+        // Migration: add weekdays column if missing
+        add_column_if_missing ("weekdays", "INTEGER NULL");
+
         //FIXME: up this because now hours are in position 1, bump it
         if (plsbump) {
             print ("Database needs some updates. Proceeding.");
@@ -87,6 +93,21 @@ public class Reminduck.Database {
                 }
 
             }
+        }
+    }
+
+    private void add_column_if_missing (string column, string type) {
+        Sqlite.Database db;
+        open_database (out db);
+
+        string query = "SELECT " + column + " FROM 'reminders'";
+        string errmsg;
+        var result = db.exec (query, (n, v, c) => { return 0; }, out errmsg);
+
+        if (result != Sqlite.OK) {
+            print ("Column " + column + " does not exist. Creating it...\n");
+            var alter_query = "ALTER TABLE `reminders` ADD `" + column + "` " + type;
+            db.exec (alter_query);
         }
     }
 
@@ -121,11 +142,11 @@ public class Reminduck.Database {
         string prepared_query_str = "";
 
         if (is_new) {
-            prepared_query_str = "INSERT INTO reminders(description, time, recurrency_type, recurrency_interval) 
-                                        VALUES($DESCRIPTION, $TIME, $RECURRENCY_TYPE, $RECURRENCY_INTERVAL)";
+            prepared_query_str = @"INSERT INTO reminders(description, time, recurrency_type, recurrency_interval, persistent, weekdays)
+                                        VALUES($DESCRIPTION, $TIME, $RECURRENCY_TYPE, $RECURRENCY_INTERVAL, $PERSISTENT, $WEEKDAYS)";
         } else {
-            prepared_query_str = "UPDATE reminders 
-                SET description = $DESCRIPTION, time = $TIME, recurrency_type = $RECURRENCY_TYPE, recurrency_interval = $RECURRENCY_INTERVAL
+            prepared_query_str = @"UPDATE reminders 
+                SET description = $DESCRIPTION, time = $TIME, recurrency_type = $RECURRENCY_TYPE, recurrency_interval = $RECURRENCY_INTERVAL, persistent = $PERSISTENT, weekdays = $WEEKDAYS
                 WHERE rowid = $ROWID";
         }
 
@@ -157,6 +178,14 @@ public class Reminduck.Database {
         assert (param_position > 0);
         stmt.bind_text (param_position, reminder.recurrency_interval.to_string ());
 
+        param_position = stmt.bind_parameter_index ("$PERSISTENT");
+        assert (param_position > 0);
+        stmt.bind_int (param_position, reminder.persistent ? 1 : 0);
+
+        param_position = stmt.bind_parameter_index ("$WEEKDAYS");
+        assert (param_position > 0);
+        stmt.bind_int (param_position, reminder.weekdays);
+
         if (!is_new) {
             param_position = stmt.bind_parameter_index ("$ROWID");
             assert (param_position > 0);
@@ -177,7 +206,7 @@ public class Reminduck.Database {
     public ArrayList<Reminder> fetch_reminders () {
         var result = new ArrayList<Reminder> ();
 
-        var query = """SELECT rowid, description, time, recurrency_type, recurrency_interval
+        var query = """SELECT rowid, description, time, recurrency_type, recurrency_interval, persistent, weekdays
                         FROM reminders
                         ORDER BY time DESC;""";
 
@@ -200,6 +229,14 @@ public class Reminduck.Database {
             //FIXME: Get rid of the 0's. Remove after a while
             if (reminder.recurrency_interval == 0) {
                 reminder.recurrency_interval = 1;
+            }
+
+            if (v[5] != null) {
+                reminder.persistent = int.parse (v[5]) == 1;
+            }
+
+            if (v[6] != null) {
+                reminder.weekdays = int.parse (v[6]);
             }
 
             result.add (reminder);

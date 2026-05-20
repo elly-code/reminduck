@@ -1,7 +1,7 @@
 project(
     'reminduck', 
     'vala', 'c', 
-    version: '2.3.1',
+    version: '2.4.0',
     license: 'GPL-3.0-or-later'
     )
 

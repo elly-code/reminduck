@@ -110,11 +110,13 @@ public class Reminduck.MainWindow : Gtk.ApplicationWindow {
         this.build_reminders_view ();
         this.build_settings_view ();
 
-        var handle = new Gtk.WindowHandle () {
-            child = stack
+        var scrolled = new Gtk.ScrolledWindow () {
+            hscrollbar_policy = Gtk.PolicyType.NEVER,
+            vscrollbar_policy = Gtk.PolicyType.AUTOMATIC
         };
+        scrolled.set_child (stack);
 
-        child = handle;
+        child = scrolled;
 
         this.show_welcome_view (Gtk.StackTransitionType.NONE);
 

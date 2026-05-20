@@ -81,7 +81,12 @@ public class Reminduck.Views.RemindersView : Gtk.Box {
                     var recurrency_indicator = new Gtk.Image ();
                     recurrency_indicator.gicon = new ThemedIcon ("media-playlist-repeat");
                     recurrency_indicator.pixel_size = 18;
-                    recurrency_indicator.tooltip_text = _("Reminded: %s").printf (reminder.recurrency_type.to_friendly_string (reminder.recurrency_interval));
+
+                    string tooltip = reminder.recurrency_type.to_friendly_string (reminder.recurrency_interval);
+                    if (reminder.recurrency_type == RecurrencyType.EVERY_WEEK && reminder.weekdays != 0) {
+                        tooltip += " (%s)".printf (Weekdays.to_display_string (reminder.weekdays));
+                    }
+                    recurrency_indicator.tooltip_text = tooltip;
                     box.append (recurrency_indicator);
                 }
 
