@@ -25,6 +25,8 @@ modules:
   - name: reminduck
     buildsystem: meson
     config-opts:
+    config-opts:
+      - --buildtype=debug
       - -Ddevelopment=true
     sources:
       - type: dir
