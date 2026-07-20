@@ -8,11 +8,40 @@ gresource_file = configure_file(
     configuration: config_data,
 )
 
-gresource = gnome.compile_resources(
-    'gresource',
-    gresource_file,
-    source_dir: '.'
+glib_compile_resources = find_program('glib-compile-resources', native: true)
+
+gresource_c = custom_target(
+    'gresource_c',
+    input: gresource_file,
+    output: 'gresource.c',
+    command: [
+        glib_compile_resources,
+        '@INPUT@',
+        '--sourcedir', meson.current_source_dir(),
+        '--generate-source',
+        '--target', '@OUTPUT@',
+        '--dependency-file', '@DEPFILE@',
+    ],
+    depfile: 'gresource.c.d',
 )
+
+gresource_h = custom_target(
+    'gresource_h',
+    input: gresource_file,
+    output: 'gresource.h',
+    command: [
+        glib_compile_resources,
+        '@INPUT@',
+        '--sourcedir', meson.current_source_dir(),
+        '--generate-header',
+        '--target', '@OUTPUT@',
+    ],
+)
+
+gresource = [
+    gresource_c,
+    gresource_h,
+]
 
 #========================
 # GSCHEMA
@@ -28,7 +57,7 @@ install_data(
     install_dir: get_option('datadir') / 'glib-2.0' / 'schemas',
 )
 
-compile_schemas = find_program('glib-compile-schemas', required: false)
+compile_schemas = find_program('glib-compile-schemas', native: true, required: false)
 if compile_schemas.found()
     test('Validate schema file', compile_schemas, args: ['--strict', '--dry-run', meson.current_source_dir()])
 endif

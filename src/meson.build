@@ -17,7 +17,7 @@ config_file = configure_file(
 
 dependencies = [
         dependency('gtk4'),
-        dependency('granite-7', version: '>=7.7.0'),
+        dependency('granite-7', version: '>=7.4.0'),
         dependency('gee-0.8'),
         dependency('sqlite3')
     ]

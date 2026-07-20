@@ -1,0 +1,88 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  APPIMAGE_EXTRACT_AND_RUN: '1'
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout Reminduck
+        uses: actions/checkout@v4
+        with:
+          path: reminduck
+
+      - name: Checkout sqgi
+        uses: actions/checkout@v4
+        with:
+          repository: supercamel/sqgi
+          path: sqgi
+
+      - name: Install build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            build-essential cmake ninja-build pkg-config git file ca-certificates wget \
+            meson valac gobject-introspection gettext desktop-file-utils appstream \
+            libglib2.0-dev libgirepository1.0-dev libffi-dev libcairo2-dev \
+            libgtk-4-dev libgranite-7-dev libgee-0.8-dev libsqlite3-dev libportal-dev \
+            librsvg2-dev librsvg2-common adwaita-icon-theme hicolor-icon-theme shared-mime-info \
+            gstreamer1.0-plugins-base gstreamer1.0-plugins-good \
+            gcc-aarch64-linux-gnu g++-aarch64-linux-gnu qemu-user-static binfmt-support \
+            mingw-w64 nsis squashfs-tools
+
+      - name: Build and install sqgi
+        run: |
+          cmake -S sqgi -B sqgi/build -G Ninja -DCMAKE_BUILD_TYPE=Release -DSQ_ENABLE_JIT=ON
+          cmake --build sqgi/build
+          sudo cmake --install sqgi/build --prefix /usr/local
+          sudo ldconfig
+
+      - name: Build Linux x86_64 AppImage
+        working-directory: reminduck
+        run: sqgipkg --target appimage --appimage-arch x86_64 --sqgi-source-dir "$GITHUB_WORKSPACE/sqgi"
+
+      - name: Build Linux aarch64 AppImage
+        working-directory: reminduck
+        run: sqgipkg --target appimage --appimage-arch aarch64 --sqgi-source-dir "$GITHUB_WORKSPACE/sqgi"
+
+      - name: Build Windows installer
+        working-directory: reminduck
+        run: sqgipkg --target win-nsis --sqgi-source-dir "$GITHUB_WORKSPACE/sqgi"
+
+      - name: Collect artifacts
+        working-directory: reminduck
+        run: |
+          mkdir -p artifacts
+          cp dist-linux-x86_64/Reminduck.AppImage artifacts/Reminduck-x86_64.AppImage
+          cp dist-linux-aarch64/Reminduck.AppImage artifacts/Reminduck-aarch64.AppImage
+          cp dist-windows-x86_64/Reminduck-Setup.exe artifacts/Reminduck-Setup.exe
+          ls -lh artifacts
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: reminduck-builds
+          path: reminduck/artifacts/*
+
+      - name: Publish release assets
+        if: startsWith(github.ref, 'refs/tags/')
+        working-directory: reminduck
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" artifacts/* \
+            --repo "$GITHUB_REPOSITORY" \
+            --title "$GITHUB_REF_NAME" \
+            --generate-notes \
+          || gh release upload "$GITHUB_REF_NAME" artifacts/* \
+            --repo "$GITHUB_REPOSITORY" --clobber

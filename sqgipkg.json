@@ -1,0 +1,186 @@
+{
+  "name": "Reminduck",
+  "entry": {
+    "type": "native",
+    "linux": "build-linux-x86_64/src/io.github.elly_code.reminduck",
+    "windows": "build-windows-x86_64/src/io.github.elly_code.reminduck.exe"
+  },
+  "linux": {
+    "arches": [
+      {
+        "arch": "x86_64",
+        "build_dir": "build-linux-x86_64",
+        "entry_linux": "build-linux-x86_64/src/io.github.elly_code.reminduck",
+        "deb": {
+          "download": true,
+          "packages": [
+            "libgtk-4-dev",
+            "gir1.2-gtk-4.0",
+            "libgranite-7-dev",
+            "gir1.2-granite-7.0",
+            "libgee-0.8-dev",
+            "libglib2.0-dev",
+            "libsqlite3-dev",
+            "libportal-dev",
+            "gobject-introspection",
+            "libgirepository1.0-dev",
+            "adwaita-icon-theme",
+            "hicolor-icon-theme",
+            "librsvg2-common",
+            "shared-mime-info",
+            "gstreamer1.0-plugins-base",
+            "gstreamer1.0-plugins-good"
+          ]
+        },
+        "inherit_native_projects": false,
+        "native_projects": [
+          {
+            "name": "reminduck",
+            "dir": ".",
+            "build": [
+              "meson setup \"$SQGI_LINUX_BUILD_DIR\" --wipe --prefix /usr --buildtype=release -Ddevelopment=false -Dlegacy-rdnn=false ${SQGI_LINUX_MESON_CROSS_FILE:+--cross-file \"$SQGI_LINUX_MESON_CROSS_FILE\"} || meson setup \"$SQGI_LINUX_BUILD_DIR\" --prefix /usr --buildtype=release -Ddevelopment=false -Dlegacy-rdnn=false ${SQGI_LINUX_MESON_CROSS_FILE:+--cross-file \"$SQGI_LINUX_MESON_CROSS_FILE\"}",
+              "meson compile -C \"$SQGI_LINUX_BUILD_DIR\""
+            ],
+            "files": [
+              "build-linux-x86_64/data/io.github.elly_code.reminduck.gschema.xml=usr/share/glib-2.0/schemas/io.github.elly_code.reminduck.gschema.xml",
+              "build-linux-x86_64/data/io.github.elly_code.reminduck.desktop=usr/share/applications/io.github.elly_code.reminduck.desktop",
+              "build-linux-x86_64/data/io.github.elly_code.reminduck.metainfo.xml=usr/share/metainfo/io.github.elly_code.reminduck.metainfo.xml",
+              "data/icons/hicolor/16.png=usr/share/icons/hicolor/16x16/apps/io.github.elly_code.reminduck.png",
+              "data/icons/hicolor/24.png=usr/share/icons/hicolor/24x24/apps/io.github.elly_code.reminduck.png",
+              "data/icons/hicolor/32.png=usr/share/icons/hicolor/32x32/apps/io.github.elly_code.reminduck.png",
+              "data/icons/hicolor/48.png=usr/share/icons/hicolor/48x48/apps/io.github.elly_code.reminduck.png",
+              "data/icons/hicolor/64.png=usr/share/icons/hicolor/64x64/apps/io.github.elly_code.reminduck.png",
+              "data/icons/hicolor/128.png=usr/share/icons/hicolor/128x128/apps/io.github.elly_code.reminduck.png",
+              "data/icons/hicolor@2/16@2.png=usr/share/icons/hicolor/16x16@2/apps/io.github.elly_code.reminduck.png",
+              "data/icons/hicolor@2/24@2.png=usr/share/icons/hicolor/24x24@2/apps/io.github.elly_code.reminduck.png",
+              "data/icons/hicolor@2/32@2.png=usr/share/icons/hicolor/32x32@2/apps/io.github.elly_code.reminduck.png",
+              "data/icons/hicolor@2/48@2.png=usr/share/icons/hicolor/48x48@2/apps/io.github.elly_code.reminduck.png",
+              "data/icons/hicolor@2/64@2.png=usr/share/icons/hicolor/64x64@2/apps/io.github.elly_code.reminduck.png",
+              "data/icons/hicolor@2/128@2.png=usr/share/icons/hicolor/128x128@2/apps/io.github.elly_code.reminduck.png",
+              "data/icons/scalable.svg=usr/share/icons/hicolor/scalable/apps/io.github.elly_code.reminduck.svg"
+            ]
+          }
+        ]
+      },
+      {
+        "arch": "aarch64",
+        "build_dir": "build-linux-aarch64",
+        "entry_linux": "build-linux-aarch64/src/io.github.elly_code.reminduck",
+        "deb": {
+          "download": true,
+          "packages": [
+            "libgtk-4-dev",
+            "gir1.2-gtk-4.0",
+            "libgranite-7-dev",
+            "gir1.2-granite-7.0",
+            "libgee-0.8-dev",
+            "libglib2.0-dev",
+            "libsqlite3-dev",
+            "libportal-dev",
+            "gobject-introspection",
+            "libgirepository1.0-dev",
+            "adwaita-icon-theme",
+            "hicolor-icon-theme",
+            "librsvg2-common",
+            "shared-mime-info",
+            "gstreamer1.0-plugins-base",
+            "gstreamer1.0-plugins-good"
+          ]
+        },
+        "inherit_native_projects": false,
+        "native_projects": [
+          {
+            "name": "reminduck",
+            "dir": ".",
+            "build": [
+              "meson setup \"$SQGI_LINUX_BUILD_DIR\" --wipe --prefix /usr --buildtype=release -Ddevelopment=false -Dlegacy-rdnn=false ${SQGI_LINUX_MESON_CROSS_FILE:+--cross-file \"$SQGI_LINUX_MESON_CROSS_FILE\"} || meson setup \"$SQGI_LINUX_BUILD_DIR\" --prefix /usr --buildtype=release -Ddevelopment=false -Dlegacy-rdnn=false ${SQGI_LINUX_MESON_CROSS_FILE:+--cross-file \"$SQGI_LINUX_MESON_CROSS_FILE\"}",
+              "meson compile -C \"$SQGI_LINUX_BUILD_DIR\""
+            ],
+            "files": [
+              "build-linux-aarch64/data/io.github.elly_code.reminduck.gschema.xml=usr/share/glib-2.0/schemas/io.github.elly_code.reminduck.gschema.xml",
+              "build-linux-aarch64/data/io.github.elly_code.reminduck.desktop=usr/share/applications/io.github.elly_code.reminduck.desktop",
+              "build-linux-aarch64/data/io.github.elly_code.reminduck.metainfo.xml=usr/share/metainfo/io.github.elly_code.reminduck.metainfo.xml",
+              "data/icons/hicolor/16.png=usr/share/icons/hicolor/16x16/apps/io.github.elly_code.reminduck.png",
+              "data/icons/hicolor/24.png=usr/share/icons/hicolor/24x24/apps/io.github.elly_code.reminduck.png",
+              "data/icons/hicolor/32.png=usr/share/icons/hicolor/32x32/apps/io.github.elly_code.reminduck.png",
+              "data/icons/hicolor/48.png=usr/share/icons/hicolor/48x48/apps/io.github.elly_code.reminduck.png",
+              "data/icons/hicolor/64.png=usr/share/icons/hicolor/64x64/apps/io.github.elly_code.reminduck.png",
+              "data/icons/hicolor/128.png=usr/share/icons/hicolor/128x128/apps/io.github.elly_code.reminduck.png",
+              "data/icons/hicolor@2/16@2.png=usr/share/icons/hicolor/16x16@2/apps/io.github.elly_code.reminduck.png",
+              "data/icons/hicolor@2/24@2.png=usr/share/icons/hicolor/24x24@2/apps/io.github.elly_code.reminduck.png",
+              "data/icons/hicolor@2/32@2.png=usr/share/icons/hicolor/32x32@2/apps/io.github.elly_code.reminduck.png",
+              "data/icons/hicolor@2/48@2.png=usr/share/icons/hicolor/48x48@2/apps/io.github.elly_code.reminduck.png",
+              "data/icons/hicolor@2/64@2.png=usr/share/icons/hicolor/64x64@2/apps/io.github.elly_code.reminduck.png",
+              "data/icons/hicolor@2/128@2.png=usr/share/icons/hicolor/128x128@2/apps/io.github.elly_code.reminduck.png",
+              "data/icons/scalable.svg=usr/share/icons/hicolor/scalable/apps/io.github.elly_code.reminduck.svg"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "windows": {
+    "msys2_prefix": "mingw64",
+    "gdk_backend": "win32",
+    "gtk_theme": "io.elementary.stylesheet.banana",
+    "gtk_icon_theme": "Adwaita",
+    "gtk_font_name": "Inter Variable Text 9",
+    "build_dir": "build-windows-x86_64",
+    "packages": [
+      "mingw-w64-x86_64-vala",
+      "mingw-w64-x86_64-gtk4",
+      "mingw-w64-x86_64-granite7",
+      "mingw-w64-x86_64-libgee",
+      "mingw-w64-x86_64-sqlite3",
+      "mingw-w64-x86_64-gdk-pixbuf2",
+      "mingw-w64-x86_64-librsvg",
+      "mingw-w64-x86_64-gstreamer",
+      "mingw-w64-x86_64-gst-plugins-base",
+      "mingw-w64-x86_64-gst-plugins-good",
+      "mingw-w64-x86_64-gsettings-desktop-schemas",
+      "mingw-w64-x86_64-hicolor-icon-theme",
+      "mingw-w64-x86_64-adwaita-icon-theme",
+      "mingw-w64-x86_64-adwaita-icon-theme-legacy",
+      "mingw-w64-x86_64-elementary-icon-theme",
+      "mingw-w64-x86_64-gtk-elementary-theme"
+    ],
+    "native_projects": [
+      {
+        "name": "reminduck",
+        "dir": ".",
+        "build": [
+          "meson setup \"$SQGI_WINDOWS_BUILD_DIR\" --wipe --prefix \"$SQGI_WINDOWS_PREFIX\" --buildtype=release -Dwindows_build=true -Ddevelopment=false -Dlegacy-rdnn=false --cross-file \"$SQGI_MESON_CROSS_FILE\" || meson setup \"$SQGI_WINDOWS_BUILD_DIR\" --prefix \"$SQGI_WINDOWS_PREFIX\" --buildtype=release -Dwindows_build=true -Ddevelopment=false -Dlegacy-rdnn=false --cross-file \"$SQGI_MESON_CROSS_FILE\"",
+          "meson compile -C \"$SQGI_WINDOWS_BUILD_DIR\""
+        ],
+        "files": [
+          "build-windows-x86_64/data/io.github.elly_code.reminduck.gschema.xml=share/glib-2.0/schemas/io.github.elly_code.reminduck.gschema.xml",
+          "data/icons/hicolor/16.png=share/icons/hicolor/16x16/apps/io.github.elly_code.reminduck.png",
+          "data/icons/hicolor/24.png=share/icons/hicolor/24x24/apps/io.github.elly_code.reminduck.png",
+          "data/icons/hicolor/32.png=share/icons/hicolor/32x32/apps/io.github.elly_code.reminduck.png",
+          "data/icons/hicolor/48.png=share/icons/hicolor/48x48/apps/io.github.elly_code.reminduck.png",
+          "data/icons/hicolor/64.png=share/icons/hicolor/64x64/apps/io.github.elly_code.reminduck.png",
+          "data/icons/hicolor/128.png=share/icons/hicolor/128x128/apps/io.github.elly_code.reminduck.png",
+          "data/icons/hicolor/256.png=share/icons/hicolor/256x256/apps/io.github.elly_code.reminduck.png",
+          "data/icons/hicolor@2/16@2.png=share/icons/hicolor/16x16@2/apps/io.github.elly_code.reminduck.png",
+          "data/icons/hicolor@2/24@2.png=share/icons/hicolor/24x24@2/apps/io.github.elly_code.reminduck.png",
+          "data/icons/hicolor@2/32@2.png=share/icons/hicolor/32x32@2/apps/io.github.elly_code.reminduck.png",
+          "data/icons/hicolor@2/48@2.png=share/icons/hicolor/48x48@2/apps/io.github.elly_code.reminduck.png",
+          "data/icons/hicolor@2/64@2.png=share/icons/hicolor/64x64@2/apps/io.github.elly_code.reminduck.png",
+          "data/icons/hicolor@2/128@2.png=share/icons/hicolor/128x128@2/apps/io.github.elly_code.reminduck.png",
+          "data/icons/hicolor@2/256@2.png=share/icons/hicolor/256x256@2/apps/io.github.elly_code.reminduck.png",
+          "data/icons/scalable.svg=share/icons/hicolor/scalable/apps/io.github.elly_code.reminduck.svg"
+        ]
+      }
+    ],
+    "nsis_options": {
+      "installer_name": "Reminduck-Setup.exe",
+      "install_dir": "$LOCALAPPDATA\\Programs\\io.github.elly_code.reminduck",
+      "request_execution_level": "user",
+      "icon": "windows/icons/install.ico",
+      "desktop_shortcut": true,
+      "start_menu_shortcut": true,
+      "start_menu_folder": "Reminduck",
+      "uninstall_registry": true
+    }
+  }
+}
